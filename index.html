@@ -7,62 +7,77 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-orange-50 text-gray-800">
+<body class="bg-gradient-to-br from-orange-50 to-orange-100 text-gray-800">
 
 <!-- Navbar -->
-<nav class="flex justify-between items-center p-5 bg-white shadow">
-  <h1 class="text-xl font-bold text-orange-600">Roti Bakar Kinot</h1>
-  <a href="#menu" class="bg-orange-500 text-white px-4 py-2 rounded-xl">Order Sekarang</a>
+<nav class="flex justify-between items-center p-5 bg-white shadow-md sticky top-0">
+  <h1 class="text-xl font-bold text-orange-600">Kinot</h1>
+  <a href="#menu" class="bg-orange-500 hover:bg-orange-600 transition text-white px-4 py-2 rounded-xl">Order</a>
 </nav>
 
-<!-- Hero -->
-<section class="text-center py-16 px-6">
-  <h2 class="text-4xl md:text-5xl font-bold mb-4">Roti Bakar Premium 🔥</h2>
-  <p class="mb-4 text-gray-600">Lezat, lumer, dan bikin nagih!</p>
-  <p class="mb-6 font-semibold text-orange-600">Sudah dipesan 100+ pelanggan 😍</p>
+<!-- Hero Premium -->
+<section class="text-center py-20 px-6">
+  <h2 class="text-4xl md:text-6xl font-extrabold mb-4 leading-tight">
+    Roti Bakar <span class="text-orange-500">Premium</span> 🔥
+  </h2>
+  <p class="text-lg text-gray-600 mb-4">Lumer, hangat & bikin nagih setiap gigitan</p>
+  <p class="text-orange-600 font-semibold mb-6">⭐ 100+ pelanggan puas</p>
+  <a href="#menu" class="bg-orange-500 hover:bg-orange-600 transition text-white px-6 py-3 rounded-2xl text-lg shadow-lg">Lihat Menu</a>
 </section>
 
 <!-- Menu -->
-<section id="menu" class="px-6 py-12">
-  <h3 class="text-2xl font-bold text-center mb-8">Menu Best Seller 🔥</h3>
+<section id="menu" class="px-6 py-16">
+  <h3 class="text-3xl font-bold text-center mb-12">Best Seller 🔥</h3>
 
-  <div class="grid md:grid-cols-3 gap-6">
+  <div class="grid md:grid-cols-3 gap-8">
 
     <!-- Coklat Keju -->
-    <div class="bg-white p-5 rounded-2xl shadow text-center relative">
-      <span class="absolute top-2 left-2 bg-red-500 text-white text-xs px-2 py-1 rounded">LARIS</span>
+    <div class="bg-white p-5 rounded-3xl shadow-lg hover:shadow-2xl transition text-center">
       <img src="coklat-keju.jpg" class="rounded-xl mb-4 mx-auto">
-      <h4 class="font-bold text-lg">Coklat Keju</h4>
-      <p class="text-orange-600 font-bold mb-2">Rp 20.000</p>
-      <a href="https://wa.me/62XXXXXXXXXX?text=Halo%20saya%20mau%20pesan%20Coklat%20Keju" class="bg-green-500 text-white px-4 py-2 rounded-xl">Pesan</a>
+      <h4 class="font-bold text-xl">Coklat Keju</h4>
+      <p class="text-orange-600 font-bold text-lg mb-2">Rp 15.000</p>
+      <span class="text-xs bg-red-500 text-white px-2 py-1 rounded">LARIS</span>
+      <div class="mt-4">
+        <a href="https://wa.me/62XXXXXXXXXX?text=Pesan%20Coklat%20Keju" class="bg-green-500 hover:bg-green-600 transition text-white px-5 py-2 rounded-xl">Pesan Sekarang</a>
+      </div>
     </div>
 
     <!-- Melon -->
-    <div class="bg-white p-5 rounded-2xl shadow text-center relative">
-      <span class="absolute top-2 left-2 bg-orange-500 text-white text-xs px-2 py-1 rounded">FAVORIT</span>
+    <div class="bg-white p-5 rounded-3xl shadow-lg hover:shadow-2xl transition text-center">
       <img src="melon.jpg" class="rounded-xl mb-4 mx-auto">
-      <h4 class="font-bold text-lg">Melon Special 🍈</h4>
-      <p class="text-orange-600 font-bold mb-2">Rp 25.000</p>
-      <a href="https://wa.me/628119588455?text=Halo%20saya%20mau%20pesan%20Melon" class="bg-green-500 text-white px-4 py-2 rounded-xl">Pesan</a>
+      <h4 class="font-bold text-xl">Melon Special 🍈</h4>
+      <p class="text-orange-600 font-bold text-lg mb-2">Rp 17.000</p>
+      <span class="text-xs bg-orange-500 text-white px-2 py-1 rounded">FAVORIT</span>
+      <div class="mt-4">
+        <a href="https://wa.me/628119588455?text=Pesan%20Melon" class="bg-green-500 hover:bg-green-600 transition text-white px-5 py-2 rounded-xl">Pesan Sekarang</a>
+      </div>
     </div>
 
     <!-- Tiramisu -->
-    <div class="bg-white p-5 rounded-2xl shadow text-center relative">
-      <span class="absolute top-2 left-2 bg-purple-500 text-white text-xs px-2 py-1 rounded">PREMIUM</span>
+    <div class="bg-white p-5 rounded-3xl shadow-lg hover:shadow-2xl transition text-center">
       <img src="tiramizu.jpg" class="rounded-xl mb-4 mx-auto">
-      <h4 class="font-bold text-lg">Tiramisu</h4>
-      <p class="text-orange-600 font-bold mb-2">Rp 30.000</p>
-      <a href="https://wa.me/628119588455?text=Halo%20saya%20mau%20pesan%20Tiramisu" class="bg-green-500 text-white px-4 py-2 rounded-xl">Pesan</a>
+      <h4 class="font-bold text-xl">Tiramizu</h4>
+      <p class="text-orange-600 font-bold text-lg mb-2">Rp 18.000</p>
+      <span class="text-xs bg-purple-500 text-white px-2 py-1 rounded">PREMIUM</span>
+      <div class="mt-4">
+        <a href="https://wa.me/628119588455?text=Pesan%20Tiramizu" class="bg-green-500 hover:bg-green-600 transition text-white px-5 py-2 rounded-xl">Pesan Sekarang</a>
+      </div>
     </div>
 
   </div>
 </section>
 
 <!-- CTA -->
-<section class="text-center py-12">
-  <p class="mb-4 font-semibold">Order sekarang sebelum kehabisan!</p>
-  <a href="https://wa.me/628119588455" class="bg-green-600 text-white px-6 py-3 rounded-2xl text-lg">Chat WhatsApp</a>
+<section class="text-center py-16 bg-orange-500 text-white">
+  <h3 class="text-2xl font-bold mb-4">Lagi Lapar? 🤤</h3>
+  <p class="mb-6">Order sekarang sebelum kehabisan!</p>
+  <a href="https://wa.me/628119488455" class="bg-white text-orange-600 px-6 py-3 rounded-2xl font-semibold shadow">Chat WhatsApp</a>
 </section>
+
+<!-- Footer -->
+<footer class="text-center p-5 text-sm text-gray-500">
+  © 2026 Roti Bakar Kinot
+</footer>
 
 </body>
 </html>
