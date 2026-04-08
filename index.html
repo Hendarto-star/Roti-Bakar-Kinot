@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Roti Bakar Kinot</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .fade-in {opacity:0; transform: translateY(30px); transition: all 0.8s ease;}
+    .fade-in.show {opacity:1; transform: translateY(0);}
+  </style>
 </head>
 
 <body class="bg-gradient-to-br from-orange-50 to-orange-100 text-gray-800">
@@ -12,55 +16,52 @@
 <!-- Navbar -->
 <nav class="flex justify-between items-center p-5 bg-white shadow-md sticky top-0">
   <h1 class="text-xl font-bold text-orange-600">Kinot</h1>
-  <a href="#menu" class="bg-orange-500 hover:bg-orange-600 transition text-white px-4 py-2 rounded-xl">Order</a>
+  <a href="#menu" class="bg-orange-500 hover:scale-105 transition text-white px-4 py-2 rounded-xl">Order</a>
 </nav>
 
-<!-- Hero Premium -->
-<section class="text-center py-20 px-6">
+<!-- Hero -->
+<section class="text-center py-20 px-6 fade-in">
   <h2 class="text-4xl md:text-6xl font-extrabold mb-4 leading-tight">
     Roti Bakar <span class="text-orange-500">Premium</span> 🔥
   </h2>
-  <p class="text-lg text-gray-600 mb-4">Lumer, hangat & bikin nagih setiap gigitan</p>
+  <p class="text-lg text-gray-600 mb-4">Lumer, hangat & bikin nagih</p>
   <p class="text-orange-600 font-semibold mb-6">⭐ 100+ pelanggan puas</p>
-  <a href="#menu" class="bg-orange-500 hover:bg-orange-600 transition text-white px-6 py-3 rounded-2xl text-lg shadow-lg">Lihat Menu</a>
+  <a href="#menu" class="bg-orange-500 hover:scale-110 transition text-white px-6 py-3 rounded-2xl text-lg shadow-lg">Lihat Menu</a>
 </section>
 
 <!-- Menu -->
 <section id="menu" class="px-6 py-16">
-  <h3 class="text-3xl font-bold text-center mb-12">Best Seller 🔥</h3>
+  <h3 class="text-3xl font-bold text-center mb-12 fade-in">Best Seller 🔥</h3>
 
   <div class="grid md:grid-cols-3 gap-8">
 
-    <!-- Coklat Keju -->
-    <div class="bg-white p-5 rounded-3xl shadow-lg hover:shadow-2xl transition text-center">
+    <div class="bg-white p-5 rounded-3xl shadow-lg hover:scale-105 hover:shadow-2xl transition text-center fade-in">
       <img src="coklat-keju.jpg" class="rounded-xl mb-4 mx-auto">
       <h4 class="font-bold text-xl">Coklat Keju</h4>
       <p class="text-orange-600 font-bold text-lg mb-2">Rp 15.000</p>
       <span class="text-xs bg-red-500 text-white px-2 py-1 rounded">LARIS</span>
       <div class="mt-4">
-        <a href="https://wa.me/62XXXXXXXXXX?text=Pesan%20Coklat%20Keju" class="bg-green-500 hover:bg-green-600 transition text-white px-5 py-2 rounded-xl">Pesan Sekarang</a>
+        <a href="https://wa.me/628119588455?text=Pesan%20Coklat%20Keju" class="bg-green-500 hover:scale-110 transition text-white px-5 py-2 rounded-xl">Pesan</a>
       </div>
     </div>
 
-    <!-- Melon -->
-    <div class="bg-white p-5 rounded-3xl shadow-lg hover:shadow-2xl transition text-center">
+    <div class="bg-white p-5 rounded-3xl shadow-lg hover:scale-105 hover:shadow-2xl transition text-center fade-in">
       <img src="melon.jpg" class="rounded-xl mb-4 mx-auto">
       <h4 class="font-bold text-xl">Melon Special 🍈</h4>
       <p class="text-orange-600 font-bold text-lg mb-2">Rp 17.000</p>
       <span class="text-xs bg-orange-500 text-white px-2 py-1 rounded">FAVORIT</span>
       <div class="mt-4">
-        <a href="https://wa.me/628119588455?text=Pesan%20Melon" class="bg-green-500 hover:bg-green-600 transition text-white px-5 py-2 rounded-xl">Pesan Sekarang</a>
+        <a href="https://wa.me/628119588455?text=Pesan%20Melon" class="bg-green-500 hover:scale-110 transition text-white px-5 py-2 rounded-xl">Pesan</a>
       </div>
     </div>
 
-    <!-- Tiramisu -->
-    <div class="bg-white p-5 rounded-3xl shadow-lg hover:shadow-2xl transition text-center">
+    <div class="bg-white p-5 rounded-3xl shadow-lg hover:scale-105 hover:shadow-2xl transition text-center fade-in">
       <img src="tiramizu.jpg" class="rounded-xl mb-4 mx-auto">
       <h4 class="font-bold text-xl">Tiramizu</h4>
       <p class="text-orange-600 font-bold text-lg mb-2">Rp 18.000</p>
       <span class="text-xs bg-purple-500 text-white px-2 py-1 rounded">PREMIUM</span>
       <div class="mt-4">
-        <a href="https://wa.me/628119588455?text=Pesan%20Tiramizu" class="bg-green-500 hover:bg-green-600 transition text-white px-5 py-2 rounded-xl">Pesan Sekarang</a>
+        <a href="https://wa.me/628119588455?text=Pesan%20Tiramizu" class="bg-green-500 hover:scale-110 transition text-white px-5 py-2 rounded-xl">Pesan</a>
       </div>
     </div>
 
@@ -68,16 +69,28 @@
 </section>
 
 <!-- CTA -->
-<section class="text-center py-16 bg-orange-500 text-white">
+<section class="text-center py-16 bg-orange-500 text-white fade-in">
   <h3 class="text-2xl font-bold mb-4">Lagi Lapar? 🤤</h3>
   <p class="mb-6">Order sekarang sebelum kehabisan!</p>
-  <a href="https://wa.me/628119488455" class="bg-white text-orange-600 px-6 py-3 rounded-2xl font-semibold shadow">Chat WhatsApp</a>
+  <a href="https://wa.me/628119588455" class="bg-white text-orange-600 px-6 py-3 rounded-2xl font-semibold shadow hover:scale-110 transition">Chat WhatsApp</a>
 </section>
 
-<!-- Footer -->
-<footer class="text-center p-5 text-sm text-gray-500">
-  © 2026 Roti Bakar Kinot
-</footer>
+<script>
+  const faders = document.querySelectorAll('.fade-in');
+  const appearOptions = { threshold: 0.2 };
+
+  const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add('show');
+      observer.unobserve(entry.target);
+    });
+  }, appearOptions);
+
+  faders.forEach(fader => {
+    appearOnScroll.observe(fader);
+  });
+</script>
 
 </body>
 </html>
